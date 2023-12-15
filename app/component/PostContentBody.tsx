@@ -11,7 +11,7 @@ export default function PostContentBody() {
   };
 
   return (
-    <div>
+    <div className="py-2">
       {data.map((content) => (
         <PostContentBox data={content} onDelete={onDelete} key={content.id} />
       ))}

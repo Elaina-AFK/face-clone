@@ -10,12 +10,17 @@ export default function PostContentBox({
   onDelete: (id: Key) => void;
 }) {
   return (
-    <div className="bg-slate-800 flex flex-col gap-y-2 my-3 px-1">
-      <div>
-        <button className="" onClick={() => onDelete(data.id)}>
+    <div className="bg-cyan-800 flex flex-col gap-y-2 my-3 px-1 rounded-md">
+      <div className="text-white flex justify-end">
+        <button className="bg-slate-900 p-1 hover:bg-slate-800 rounded-sm">
+          Edit
+        </button>
+        <button
+          className="bg-red-900 p-1 hover:bg-red-800 rounded-sm"
+          onClick={() => onDelete(data.id)}
+        >
           Delete
         </button>
-        <button className="">Edit</button>
       </div>
       <p>{data.content}</p>
       <p className="text-right">created: {data.created.toDateString()}</p>

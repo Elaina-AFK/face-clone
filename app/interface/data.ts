@@ -11,4 +11,5 @@ export interface ContentContext {
   data: Content[];
   addContent: (data: Content) => void;
   removeContent: (id: Key) => void;
+  onSearch: (query: string) => void;
 }
