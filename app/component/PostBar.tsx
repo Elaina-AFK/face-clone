@@ -10,7 +10,7 @@ export default function PostBar() {
   const handleClick = () => {
     const created = new Date();
     const id = Number(new Date()).toString(16);
-    const content = faker.word.words(15);
+    const content = faker.word.words(45);
     const user = faker.internet.userName();
     addContent({ created, content, user, id });
   };

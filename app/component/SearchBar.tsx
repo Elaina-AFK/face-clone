@@ -14,7 +14,7 @@ export default function SearchBar() {
     <input
       type="text"
       onChange={handleChange}
-      className="p-1 text-black rounded-lg w-full max-w-lg"
+      className="p-1 text-black rounded-full w-56 h-10"
     />
   );
 }

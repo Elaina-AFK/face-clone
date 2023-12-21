@@ -4,13 +4,13 @@ import PostContentBody from "./component/PostContentBody";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-7">
-      <aside className="col-start-1 col-end-3 h-full min-h-screen bg-slate-600"></aside>
-      <main className="col-start-3 col-end-6 h-full min-h-screen bg-slate-700">
+    <div className="grid grid-cols-12">
+      <aside className="col-start-1 col-end-4 h-full min-h-screen bg-slate-600 max-lg:hidden"></aside>
+      <main className="col-start-4 col-end-10 h-full min-h-screen bg-slate-600 px-2 max-lg:col-start-1 max-md:col-end-13">
         <PostBar />
         <PostContentBody />
       </main>
-      <aside className="col-start-6 col-end-8 h-full min-h-screen bg-slate-600"></aside>
+      <aside className="col-start-10 col-end-13 h-full min-h-screen bg-slate-600 max-md:hidden"></aside>
     </div>
   );
 }
