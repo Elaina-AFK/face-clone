@@ -1,3 +1,4 @@
+import Navbar from "./Navbar";
 import SearchBar from "./SearchBar";
 
 const FacebookIcon = () => (
@@ -12,11 +13,12 @@ const FacebookIcon = () => (
 
 export default function Header() {
   return (
-    <header className="w-full py-1 bg-cyan-600 grid grid-cols-12">
+    <header className="w-full bg-cyan-600 grid grid-cols-12">
       <div className="flex col-start-1 col-end-4 items-center">
         <FacebookIcon />
         <SearchBar />
       </div>
+      <Navbar />
     </header>
   );
 }
