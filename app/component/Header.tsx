@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <header className="w-full bg-slate-800 grid grid-cols-12 h-14 fixed top-0">
       <div className="flex col-start-1 col-end-4 items-center">
-        <Link href={"/"} className="rounded-full">
+        <Link href={"/"} className="rounded-full mx-2">
           <FacebookIcon />
         </Link>
         <SearchBar />
