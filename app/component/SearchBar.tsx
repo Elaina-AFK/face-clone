@@ -14,7 +14,7 @@ export default function SearchBar() {
     <input
       type="text"
       onChange={handleChange}
-      placeholder="Search on Facebook"
+      placeholder="Search on Face-clone"
       className="p-1 pl-3 text-black rounded-full w-56 h-9 text-sm"
     />
   );
