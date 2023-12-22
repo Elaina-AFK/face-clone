@@ -15,7 +15,7 @@ export default function NavList({
     <>
       {pathname === href ? (
         <li className="h-full w-full max-w-md grid place-items-center border-b-2 border-blue-700">
-          <Link href={href} className="fill-blue-700">
+          <Link href={href} className="fill-blue-600">
             {children}
           </Link>
         </li>

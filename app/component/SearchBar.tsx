@@ -15,7 +15,7 @@ export default function SearchBar() {
       type="text"
       onChange={handleChange}
       placeholder="Search on Facebook"
-      className="p-1 pl-3 text-black rounded-full w-56 h-10 text-sm"
+      className="p-1 pl-3 text-black rounded-full w-56 h-9 text-sm"
     />
   );
 }
