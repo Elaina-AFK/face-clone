@@ -13,3 +13,13 @@ export interface ContentContext {
   removeContent: (id: Key) => void;
   onSearch: (query: string) => void;
 }
+
+export interface Profile {
+  uid: Key;
+  name: string;
+  url: string;
+}
+
+export interface ProfileContext {
+  data: Profile;
+}

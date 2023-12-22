@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Navbar from "./Navbar";
 import SearchBar from "./SearchBar";
+import Profile from "./Profile";
+import { faker } from "@faker-js/faker";
 
 const FacebookIcon = () => (
   <svg
@@ -22,6 +24,9 @@ export default function Header() {
         <SearchBar />
       </div>
       <Navbar />
+      <div className="flex col-start-10 col-end-13 justify-end items-center">
+        <Profile />
+      </div>
     </header>
   );
 }
