@@ -13,27 +13,27 @@ export default function NavList({
 }) {
   const pathname = usePathname();
   const HoverText = (
-    <p className="invisible absolute top-16 bg-slate-600 py-1 px-2 rounded-md opacity-75 peer-hover:visible">
+    <p className="invisible absolute top-16 rounded-md bg-slate-600 px-2 py-1 opacity-75 peer-hover:visible">
       {title}
     </p>
   );
   return (
     <>
       {pathname === href ? (
-        <li className="h-full w-full grid place-items-center max-w-md border-b-2 border-blue-700 ">
+        <li className="grid h-full w-full max-w-md place-items-center border-b-2 border-blue-700 ">
           <Link
             href={href}
-            className="fill-blue-600 w-full h-full grid place-items-center relative peer m-2"
+            className="peer relative m-2 grid h-full w-full place-items-center fill-blue-600"
           >
             {children}
           </Link>
           {HoverText}
         </li>
       ) : (
-        <li className="h-full w-full grid place-items-center max-w-md">
+        <li className="grid h-full w-full max-w-md place-items-center">
           <Link
             href={href}
-            className="fill-white grid place-items-center relative peer h-4/5 w-5/6 hover:bg-slate-700 rounded-lg"
+            className="peer relative grid h-4/5 w-5/6 place-items-center rounded-lg fill-white hover:bg-slate-700"
           >
             {children}
           </Link>

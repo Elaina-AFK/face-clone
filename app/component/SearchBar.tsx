@@ -16,7 +16,7 @@ export default function SearchBar() {
       type="text"
       onChange={handleChange}
       placeholder="Search on Face-clone"
-      className="p-1 pl-3 text-black rounded-full w-56 h-9 text-sm"
+      className="h-9 w-56 rounded-full p-1 pl-3 text-sm text-black"
     />
   );
 }

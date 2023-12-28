@@ -12,9 +12,9 @@ export default function NavLink({
   return (
     <Link
       href={href}
-      className="flex justify-start items-center w-full h-16 rounded-lg hover:bg-slate-700"
+      className="flex h-16 w-full items-center justify-start rounded-lg hover:bg-slate-700"
     >
-      <div className="fill-slate-400 aspect-square h-12 p-2 mx-2">
+      <div className="mx-2 aspect-square h-12 fill-slate-400 p-2">
         {children}
       </div>
       <h2>{title}</h2>

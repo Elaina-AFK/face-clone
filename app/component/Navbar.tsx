@@ -3,7 +3,7 @@ import NavList from "./NavList";
 export default function Navbar() {
   return (
     <nav className="col-start-4 col-end-10 px-2">
-      <ul className="flex justify-between items-center w-full h-full max-md:hidden">
+      <ul className="flex h-full w-full items-center justify-between max-md:hidden">
         <NavList href="/" title="Home">
           <svg
             viewBox="0 0 1024 1023"

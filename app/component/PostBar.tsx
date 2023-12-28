@@ -18,7 +18,7 @@ export default function PostBar() {
   return (
     <button
       onClick={handleClick}
-      className="bg-emerald-700 p-2 rounded-md w-full hover:bg-emerald-500"
+      className="w-full rounded-md bg-emerald-700 p-2 hover:bg-emerald-500"
     >
       Generate Post
     </button>

@@ -11,7 +11,7 @@ export default function Profile() {
   const { url, name } = data;
 
   return (
-    <div tabIndex={8} className="relative mx-2 group">
+    <div tabIndex={8} className="group relative mx-2">
       <Image
         src={url}
         alt={name}
@@ -19,7 +19,7 @@ export default function Profile() {
         height={42}
         className="rounded-full"
       />
-      <ul className="invisible group-focus:visible fixed right-2 top-20 w-64 h-fit flex flex-col items-start bg-slate-800 rounded-md text-sm">
+      <ul className="invisible fixed right-2 top-20 flex h-fit w-64 flex-col items-start rounded-md bg-slate-800 text-sm group-focus:visible">
         <ProfileLink />
         <NavLink href="/setting" title={"Settings"}>
           <svg

@@ -22,9 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Provider>
-          <aside className="fixed top-16 w-1/4 h-full min-h-screen flex flex-col items-center px-2 pl-2 max-lg:hidden">
-            <LeftAside />
-          </aside>
+          <LeftAside />
           <Header />
           {children}
         </Provider>
