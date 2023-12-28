@@ -1,11 +1,11 @@
 "use client";
 
 import { faker } from "@faker-js/faker";
-import { useContext } from "react";
-import { PostContext } from "../content";
+import { writePostAtom } from "../atoms/post";
+import { useSetAtom } from "jotai";
 
 export default function PostBar() {
-  const { addContent } = useContext(PostContext);
+  const addContent = useSetAtom(writePostAtom);
 
   const handleClick = () => {
     const created = new Date();

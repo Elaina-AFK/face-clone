@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import NavLink from "./NavLink";
-import { useContext } from "react";
-import { ProfContext } from "../Profile";
 import ProfileLink from "./ProfileLink";
+import { useAtomValue } from "jotai";
+import { ReadUserAtom } from "../atoms/user";
 
 export default function Profile() {
-  const { data } = useContext(ProfContext);
+  const data = useAtomValue(ReadUserAtom);
   const { url, name } = data;
 
   return (
@@ -19,7 +19,7 @@ export default function Profile() {
         height={42}
         className="rounded-full"
       />
-      <ul className="invisible group-focus:visible fixed right-2 top-20 w-64 h-fit flex flex-col items-start bg-slate-800 rounded-md">
+      <ul className="invisible group-focus:visible fixed right-2 top-20 w-64 h-fit flex flex-col items-start bg-slate-800 rounded-md text-sm">
         <ProfileLink />
         <NavLink href="/setting" title={"Settings"}>
           <svg

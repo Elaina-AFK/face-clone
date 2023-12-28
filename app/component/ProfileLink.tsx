@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import NavLink from "./NavLink";
-import { ProfContext } from "../Profile";
-import { useContext } from "react";
+import { useAtomValue } from "jotai";
+import { ReadUserAtom } from "../atoms/user";
 
 export default function ProfileLink() {
-  const { data } = useContext(ProfContext);
+  const data = useAtomValue(ReadUserAtom);
   const { url, name } = data;
 
   return (

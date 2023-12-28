@@ -1,13 +1,15 @@
 "use client";
-import { Key, useContext } from "react";
-import { PostContext } from "../content";
+import { Key } from "react";
 import PostContentBox from "./PostContentBox";
+import { deletePostAtom, readSearchAtom } from "../atoms/post";
+import { useAtomValue, useSetAtom } from "jotai";
 
 export default function PostContentBody() {
-  const { data, removeContent } = useContext(PostContext);
+  const data = useAtomValue(readSearchAtom);
+  const deletePost = useSetAtom(deletePostAtom);
 
   const onDelete = (id: Key) => {
-    removeContent(id);
+    deletePost(id);
   };
 
   return (

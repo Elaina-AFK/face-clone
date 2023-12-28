@@ -1,10 +1,11 @@
 "use client";
 
-import { ChangeEvent, useContext } from "react";
-import { PostContext } from "../content";
+import { ChangeEvent } from "react";
+import { useSetAtom } from "jotai";
+import { writeQueryAtom } from "../atoms/post";
 
 export default function SearchBar() {
-  const { onSearch } = useContext(PostContext);
+  const onSearch = useSetAtom(writeQueryAtom);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     onSearch(e.target.value);

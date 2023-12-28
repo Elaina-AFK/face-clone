@@ -1,4 +1,3 @@
-import LeftAside from "./component/LeftAside";
 import PostBar from "./component/PostBar";
 import PostContentBody from "./component/PostContentBody";
 
